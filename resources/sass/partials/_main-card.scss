@@ -1,0 +1,29 @@
+main.card-focus {
+    color: #003f5a;
+    background: white;
+    .hero {
+      height: 20rem;
+      background-image: url("/img/jumbotron.jpg");
+      background-position: top center;
+      background-size: cover;
+    }
+    .blue-banner {
+        height: 3rem;
+        width: 100%;
+        background-color: #0282f9;
+        position: relative;
+        .active-series {
+            width: 9rem;
+            display: flex;
+            position: absolute;
+            bottom: 1rem;
+            padding: 0.1rem;
+            border-radius: 1px;
+            background-color: white;
+            img {
+                width: 100%;
+            }
+          }
+    }
+}
+  

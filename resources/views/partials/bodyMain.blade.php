@@ -1,4 +1,4 @@
-<main>
+<main class="homepage">
     <div class="hero">
         <div class="container">
           <div class="active-series">

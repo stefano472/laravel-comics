@@ -55,12 +55,12 @@ header .active::before {
   transform: scaleY(1);
 }
 
-main {
+main.homepage {
   color: white;
   background: #1c1c1c;
 }
 
-main .hero {
+main.homepage .hero {
   height: 20rem;
   background-image: url("/img/jumbotron.jpg");
   background-position: top center;
@@ -68,7 +68,7 @@ main .hero {
   position: relative;
 }
 
-main .hero .active-series {
+main.homepage .hero .active-series {
   position: absolute;
   transform: translateY(50%);
   bottom: 0;
@@ -79,41 +79,41 @@ main .hero .active-series {
   background-color: #0282f9;
 }
 
-main .contents {
+main.homepage .contents {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
   padding: 1.5rem 0;
 }
 
-main .contents .card {
+main.homepage .contents .card {
   flex-basis: calc(16.6666666667% - 0.6666666667rem);
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-main .contents .card:hover h2 {
+main.homepage .contents .card:hover h2 {
   color: #0075f9;
 }
 
-main .contents .card:hover img {
+main.homepage .contents .card:hover img {
   opacity: 0.6;
 }
 
-main .contents .card a {
+main.homepage .contents .card a {
   text-decoration: none;
 }
 
-main .contents .card a:visited {
+main.homepage .contents .card a:visited {
   color: #0075f9;
 }
 
-main .contents img {
+main.homepage .contents img {
   width: 100%;
 }
 
-main .contents h5 {
+main.homepage .contents h5 {
   padding-top: 0.6rem;
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -121,26 +121,26 @@ main .contents h5 {
   font-weight: 700;
 }
 
-main .contents h2 {
+main.homepage .contents h2 {
   text-transform: uppercase;
   word-break: break-word;
   font-size: 1.2rem;
   padding: 0.3rem 0;
 }
 
-main .contents p {
+main.homepage .contents p {
   font-size: 0.9rem;
   color: #66e06b;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-main .more {
+main.homepage .more {
   padding: 1rem 0;
   text-align: center;
 }
 
-main .more button {
+main.homepage .more button {
   border: none;
   border-radius: 1px;
   color: white;
@@ -152,9 +152,42 @@ main .more button {
   cursor: pointer;
 }
 
-main .more button:hover {
+main.homepage .more button:hover {
   box-shadow: inset 0px 0px 0 2px;
   border-radius: 5px;
+}
+
+main.card-focus {
+  color: #003f5a;
+  background: white;
+}
+
+main.card-focus .hero {
+  height: 20rem;
+  background-image: url("/img/jumbotron.jpg");
+  background-position: top center;
+  background-size: cover;
+}
+
+main.card-focus .blue-banner {
+  height: 3rem;
+  width: 100%;
+  background-color: #0282f9;
+  position: relative;
+}
+
+main.card-focus .blue-banner .active-series {
+  width: 9rem;
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  padding: 0.1rem;
+  border-radius: 1px;
+  background-color: white;
+}
+
+main.card-focus .blue-banner .active-series img {
+  width: 100%;
 }
 
 .panel-menu {
