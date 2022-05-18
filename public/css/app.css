@@ -55,6 +55,153 @@ header .active::before {
   transform: scaleY(1);
 }
 
+main {
+  color: white;
+  background: #1c1c1c;
+}
+
+main .hero {
+  height: 20rem;
+  background-image: url("/img/jumbotron.jpg");
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+}
+
+main .hero .active-series {
+  position: absolute;
+  transform: translateY(50%);
+  bottom: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 1px;
+  background-color: #0282f9;
+}
+
+main .contents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  padding: 1.5rem 0;
+}
+
+main .contents .card {
+  flex-basis: calc(16.6666666667% - 0.6666666667rem);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+main .contents .card:hover h2 {
+  color: #0075f9;
+}
+
+main .contents .card:hover img {
+  opacity: 0.6;
+}
+
+main .contents .card a {
+  text-decoration: none;
+}
+
+main .contents .card a:visited {
+  color: #0075f9;
+}
+
+main .contents img {
+  width: 100%;
+}
+
+main .contents h5 {
+  padding-top: 0.6rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #0075f9;
+  font-weight: 700;
+}
+
+main .contents h2 {
+  text-transform: uppercase;
+  word-break: break-word;
+  font-size: 1.2rem;
+  padding: 0.3rem 0;
+}
+
+main .contents p {
+  font-size: 0.9rem;
+  color: #66e06b;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+main .more {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+main .more button {
+  border: none;
+  border-radius: 1px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  background: #0282f9;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+main .more button:hover {
+  box-shadow: inset 0px 0px 0 2px;
+  border-radius: 5px;
+}
+
+.panel-menu {
+  background: #0282f9;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.menu li:last-child {
+  height: 3.5rem;
+  display: flex;
+}
+
+.menu li:last-child img {
+  height: 1.7rem;
+}
+
+.menu li {
+  border: 0.5rem solid transparent;
+  border-radius: 1px;
+}
+
+.menu li:hover {
+  outline: 2px solid white;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.menu a img {
+  height: 2.5rem;
+}
+
 footer .hero-footer {
   background-image: url("/img/footer-bg.jpg");
   background-size: cover;

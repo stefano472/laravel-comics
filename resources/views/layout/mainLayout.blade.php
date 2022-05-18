@@ -9,14 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/app.css">
-    {{-- <title>@yield('title')</title> --}}
-    <title>DC | DC Comics</title>
+    <title>@yield('title')</title>
+
 </head>
 <body>
-    @include('partials/header')
+    @include('partials.header')
   
     @yield('main')
 
-    @include('partials/footer')
+    @include('partials.panelMenu')
+
+    @include('partials.footer')
 </body>
 </html>

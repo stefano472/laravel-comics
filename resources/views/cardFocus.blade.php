@@ -1,6 +1,11 @@
 @extends('layout.mainLayout')
 
+@section('title')
+    DC | Card Focus
+@endsection
+
 @section('main')
-    @include('bodyCardFocus')
+
+    @include('partials.bodyCardFocus')
     
 @endsection

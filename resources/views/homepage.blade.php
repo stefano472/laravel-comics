@@ -1,6 +1,9 @@
 @extends('layout.mainLayout')
 
+@section('title')
+    DC | DC Comics
+@endsection
+
 @section('main')
-    {{-- @include('bodyMain') --}}
-    <h1>hello</h1>
+    @include('partials.bodyMain')
 @endsection
