@@ -13,9 +13,10 @@
     <title>DC | DC Comics</title>
 </head>
 <body>
-    Hola
-    @yield('header')
+    @include('partials/header')
+  
     @yield('main')
-    @yield('footer')
+
+    @include('partials/footer')
 </body>
 </html>

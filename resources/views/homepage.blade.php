@@ -1,6 +1,6 @@
 @extends('layout.mainLayout')
 
 @section('main')
-    @include('bodyCardFocus')
-    
+    {{-- @include('bodyMain') --}}
+    <h1>hello</h1>
 @endsection
