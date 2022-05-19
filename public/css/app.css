@@ -87,14 +87,11 @@ main.homepage .contents {
 }
 
 main.homepage .contents .card {
+  padding: 0.4rem;
+  border-radius: 2px;
+  background-color: #292929;
   flex-basis: calc(16.6666666667% - 0.6666666667rem);
-  position: relative;
   display: flex;
-  flex-direction: column;
-}
-
-main.homepage .contents .card:hover h2 {
-  color: #0075f9;
 }
 
 main.homepage .contents .card:hover img {
@@ -102,33 +99,39 @@ main.homepage .contents .card:hover img {
 }
 
 main.homepage .contents .card a {
-  text-decoration: none;
-}
-
-main.homepage .contents .card a:visited {
   color: #0075f9;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
 
-main.homepage .contents img {
+main.homepage .contents .card a img {
   width: 100%;
 }
 
-main.homepage .contents h5 {
+main.homepage .contents .card a .definition {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+main.homepage .contents .card a .definition h5 {
   padding-top: 0.6rem;
   font-size: 0.8rem;
   text-transform: uppercase;
-  color: #0075f9;
   font-weight: 700;
 }
 
-main.homepage .contents h2 {
+main.homepage .contents .card a .definition h2 {
   text-transform: uppercase;
   word-break: break-word;
   font-size: 1.2rem;
   padding: 0.3rem 0;
+  flex-grow: 1;
 }
 
-main.homepage .contents p {
+main.homepage .contents .card a .definition p {
+  align-self: end;
   font-size: 0.9rem;
   color: #66e06b;
   font-weight: 700;
@@ -169,6 +172,11 @@ main.card-focus .hero {
   background-size: cover;
 }
 
+main.card-focus .container {
+  display: flex;
+  gap: 2rem;
+}
+
 main.card-focus .blue-banner {
   height: 3rem;
   width: 100%;
@@ -188,6 +196,35 @@ main.card-focus .blue-banner .active-series {
 
 main.card-focus .blue-banner .active-series img {
   width: 100%;
+}
+
+main.card-focus .more-infos {
+  box-shadow: 0 -1px 0 0 #d3d3d3;
+  background-color: #f6f6f6;
+}
+
+main.card-focus .more-infos .talent,
+main.card-focus .more-infos .specs {
+  flex-basis: calc(50% - 1rem);
+}
+
+main.card-focus .more-infos .info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main.card-focus .more-infos .info h5 {
+  flex-basis: 30%;
+}
+
+main.card-focus .more-infos .info p {
+  flex-basis: 70%;
+  font-size: 0.8rem;
+}
+
+main.card-focus .more-infos .info p a {
+  color: #0282f9;
+  text-decoration: none;
 }
 
 .panel-menu {
@@ -338,7 +375,7 @@ footer .bottom-footer .contacts .menu img:hover {
 }
 
 .container {
-  width: min(80%, 1200px);
+  width: min(75%, 1200px);
   margin: auto;
   padding: 1rem 0;
 }

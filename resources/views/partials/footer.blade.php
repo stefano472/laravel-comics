@@ -103,27 +103,27 @@
           <ul class="menu">
             <li>
               <a href="#">
-                <img src="img/footer-facebook.png" alt="facebook">
+                <img src="/img/footer-facebook.png" alt="facebook">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="img/footer-twitter.png" alt="twitter">
+                <img src="/img/footer-twitter.png" alt="twitter">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="img/footer-youtube.png" alt="youtube">
+                <img src="/img/footer-youtube.png" alt="youtube">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="img/footer-pinterest.png" alt="pinterest">
+                <img src="/img/footer-pinterest.png" alt="pinterest">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="img/footer-periscope.png" alt="periscope">
+                <img src="/img/footer-periscope.png" alt="periscope">
               </a>
             </li>
           </ul>       

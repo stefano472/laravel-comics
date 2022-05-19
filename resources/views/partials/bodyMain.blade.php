@@ -8,9 +8,9 @@
     </div>
     <div class="container">
       <div class="contents">
-          @foreach ($comics as $key => $card)
+          @foreach ($comics as $index => $card)
             <div class="card">
-                <a href="/card">
+                <a href="/card/{{$index}}">
                     <img src="{{ $card['thumb'] }}" alt="{{ $card['title'] }}">
                     <div class="definition">
                         <h5>{{ $card['type'] }}</h5>

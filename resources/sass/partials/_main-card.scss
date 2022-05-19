@@ -7,6 +7,10 @@ main.card-focus {
       background-position: top center;
       background-size: cover;
     }
+    .container {
+      display: flex;
+      gap: 2rem;
+    }
     .blue-banner {
         height: 3rem;
         width: 100%;
@@ -23,7 +27,31 @@ main.card-focus {
             img {
                 width: 100%;
             }
+        }
+    }
+    .more-infos {
+      box-shadow: 0 -1px 0 0 #d3d3d3;
+      background-color: #f6f6f6;
+      .talent,
+      .specs {
+        flex-basis: calc(50% - 1rem);
+      }
+      .info {
+        display: flex;
+        flex-wrap: wrap;
+        // gap: 3rem;
+        h5 {
+          flex-basis: 30% ;
+        }
+        p {
+          flex-basis: 70%;
+          font-size: 0.8rem;
+          a {
+            color: #0282f9;
+            text-decoration: none;
           }
+        }
+      }
     }
 }
   

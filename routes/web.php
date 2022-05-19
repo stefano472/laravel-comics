@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('homepage', ["comics" => $data]);
 });
 
-Route::get('/card', function () {
-    $card = config('comics');
-    return view('cardFocus', ["card" => $card[0]]);
+Route::get('/card/{index}', function ($index) {
+    $cards = config('comics');
+    return view('cardFocus', ["card" => $cards[$index]]);
 });

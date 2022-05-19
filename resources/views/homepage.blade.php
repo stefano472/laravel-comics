@@ -5,5 +5,5 @@
 @endsection
 
 @section('main')
-    @include('partials.bodyMain')
+    @include('partials.bodyMain', $comics)
 @endsection
