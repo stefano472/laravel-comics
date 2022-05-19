@@ -8,6 +8,7 @@ main.card-focus {
       background-size: cover;
     }
     .container {
+      padding: 3rem 0;
       display: flex;
       gap: 2rem;
     }
@@ -29,6 +30,38 @@ main.card-focus {
             }
         }
     }
+    .advertisement {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: flex-end;
+    }
+    .green-banner {
+      display: flex;
+      color: white;
+      font-size: 0.9rem;
+      margin: 1rem auto;
+      // padding: 0.5rem 1rem;
+      background-color: #55ba59;
+      .status {
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 1px 0 0 0 #acf488;
+        padding: 0.5rem 1rem;
+        flex-grow: 1;
+        span,
+        div {
+          color: #acf488;
+        }
+      }
+      .check-status {
+        padding: 0.5rem 1rem;
+      }
+    }
+    p.description {
+      font-size: 0.9rem;
+      color:  #555554;
+    }
     .more-infos {
       box-shadow: 0 -1px 0 0 #d3d3d3;
       background-color: #f6f6f6;
@@ -42,11 +75,15 @@ main.card-focus {
       .talent a:last-of-type::after{
         display: none;
       }
-      
+      h3 {
+        padding: 0 0 1.5rem;
+        box-shadow: 0 1px 0 0 #d3d3d3;
+      }
       .info {
         display: flex;
         flex-wrap: wrap;
-        // gap: 3rem;
+        padding: 0.5rem 0;
+        box-shadow: 0 1px 0 0 #d3d3d3;
         h5 {
           flex-basis: 30% ;
         }

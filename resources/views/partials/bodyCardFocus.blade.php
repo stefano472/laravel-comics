@@ -9,16 +9,23 @@
     </div>
     <div class="container">
       <div class="description">
-        <h2>{{ $card['title'] }}</h2>
-        <h5>{{ $card['type'] }}</h5>
-        <p>U.S. Price: {{ $card['price'] }}</p>
-        <p>{{ $card['description']}}</p>
+        <h2>{{ strtoupper($card['title']) }}</h2>
+        <div class="green-banner">
+          <div class="status">
+            <p>
+              <span>U.S. Price: </span>
+              {{ $card['price'] }}
+            </p>
+            <div>AVAILABLE</div>
+          </div>
+          <div class="check-status">Check Availability &#9662;</div>
+        </div>
+        <p class="description">{{ $card['description']}}</p>
       </div>
       <div class="advertisement">
         <h5>ADVERTISEMENT</h5>
         <img src="/img/advertise.png" alt="advertisement">
       </div>
-
     </div>
     <div class="more-infos">
       <div class="container">
