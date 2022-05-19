@@ -34,7 +34,7 @@ header li {
 header li::before {
   position: absolute;
   content: "";
-  bottom: -3.15rem;
+  bottom: -3rem;
   width: 100%;
   height: 4px;
   background: #0282f9;
@@ -87,11 +87,20 @@ main.homepage .contents {
 }
 
 main.homepage .contents .card {
-  padding: 0.4rem;
+  padding: 0.3rem;
   border-radius: 2px;
   background-color: #292929;
   flex-basis: calc(16.6666666667% - 0.6666666667rem);
   display: flex;
+  transition: 0.3s;
+}
+
+main.homepage .contents .card:hover {
+  transform: scale(1.04);
+}
+
+main.homepage .contents .card:hover h2 {
+  color: #0060cc;
 }
 
 main.homepage .contents .card:hover img {
@@ -186,17 +195,39 @@ main.card-focus .blue-banner {
 }
 
 main.card-focus .blue-banner .active-series {
-  width: 9rem;
+  width: 10rem;
   display: flex;
   position: absolute;
   bottom: 1rem;
   padding: 0.1rem;
   border-radius: 1px;
   background-color: white;
+  transition: 0.3s;
 }
 
-main.card-focus .blue-banner .active-series img {
+main.card-focus .blue-banner .active-series:hover {
+  transform: scale(1.04);
+}
+
+main.card-focus .blue-banner .active-series a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+main.card-focus .blue-banner .active-series a img {
   width: 100%;
+}
+
+main.card-focus .blue-banner .active-series a .view-gallery {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  background-color: #0282f9;
+  padding: 0.1rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
 }
 
 main.card-focus .advertisement {
@@ -284,7 +315,7 @@ main.card-focus .more-infos .info p a {
   background: #0282f9;
 }
 
-.menu {
+.panel-menu .menu {
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -292,25 +323,25 @@ main.card-focus .more-infos .info p a {
   padding: 1rem 0;
 }
 
-.menu li:last-child {
+.panel-menu .menu li:last-child {
   height: 3.5rem;
   display: flex;
 }
 
-.menu li:last-child img {
+.panel-menu .menu li:last-child img {
   height: 1.7rem;
 }
 
-.menu li {
+.panel-menu .menu li {
   border: 0.5rem solid transparent;
   border-radius: 1px;
 }
 
-.menu li:hover {
+.panel-menu .menu li:hover {
   outline: 2px solid white;
 }
 
-.menu a {
+.panel-menu .menu a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -321,7 +352,7 @@ main.card-focus .more-infos .info p a {
   gap: 0.8rem;
 }
 
-.menu a img {
+.panel-menu .menu a img {
   height: 2.5rem;
 }
 

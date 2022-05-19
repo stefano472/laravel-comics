@@ -24,15 +24,17 @@ main.homepage {
         gap: 0.8rem;
         padding: 1.5rem 0;
         .card {
-            padding: 0.4rem;
+            padding: 0.3rem;
             border-radius: 2px;
             background-color: #292929;
             flex-basis: calc(100% / 6 - 0.8rem * 5 / 6);
             display: flex;
+            transition: 0.3s;
             &:hover {
-                // h2 {
-                //     color: #0075f9;
-                // }
+                transform: scale(1.04);
+                h2 {
+                    color: #0060cc;
+                }
                 img {
                     opacity: 0.6;
                     // aspect-ratio: auto;

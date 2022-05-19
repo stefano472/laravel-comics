@@ -3,7 +3,10 @@
     <div class="blue-banner">
         <div class="container">
           <div class="active-series">
-            <img src="{{ $card['thumb']}}" alt="card">
+            <a href="/">
+              <img src="{{ $card['thumb']}}" alt="card">
+              <div class="view-gallery">View Gallery</div>
+            </a>
           </div>
         </div>
     </div>

@@ -18,15 +18,34 @@ main.card-focus {
         background-color: #0282f9;
         position: relative;
         .active-series {
-            width: 9rem;
+            width: 10rem;
             display: flex;
             position: absolute;
             bottom: 1rem;
             padding: 0.1rem;
             border-radius: 1px;
             background-color: white;
-            img {
+            transition: 0.3s;
+            &:hover {
+              transform: scale(1.04);
+            }
+            a{
+              text-decoration: none;
+              color: white;
+              position: relative;
+              img {
+                  width: 100%;
+              }
+              .view-gallery {
+                font-size: 0.7rem;
+                text-transform: uppercase;
+                background-color: #0282f9;
+                padding: 0.1rem;
                 width: 100%;
+                position: absolute;
+                bottom: 0;
+                text-align: center;
+              }
             }
         }
     }
