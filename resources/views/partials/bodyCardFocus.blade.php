@@ -30,7 +30,7 @@
               @foreach ($card['artists'] as $artist)
                 <a href="#">
                   {{ $artist }} 
-                </a>, 
+                </a>
               @endforeach
               {{-- {{ $card['artists'] }}</p> --}}
           </div>
@@ -40,7 +40,7 @@
               @foreach ($card['writers'] as $writer)
                 <a href="#">
                   {{ $writer }} 
-                </a>, 
+                </a>
               @endforeach
             </p>
           </div>

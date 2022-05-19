@@ -36,6 +36,13 @@ main.card-focus {
       .specs {
         flex-basis: calc(50% - 1rem);
       }
+      .talent a::after {
+        content: ", ";
+      }
+      .talent a:last-of-type::after{
+        display: none;
+      }
+      
       .info {
         display: flex;
         flex-wrap: wrap;

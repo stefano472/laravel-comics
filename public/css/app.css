@@ -208,6 +208,14 @@ main.card-focus .more-infos .specs {
   flex-basis: calc(50% - 1rem);
 }
 
+main.card-focus .more-infos .talent a::after {
+  content: ", ";
+}
+
+main.card-focus .more-infos .talent a:last-of-type::after {
+  display: none;
+}
+
 main.card-focus .more-infos .info {
   display: flex;
   flex-wrap: wrap;
